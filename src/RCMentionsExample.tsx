@@ -36,6 +36,7 @@ const RCMentionsExample: React.FC = () => {
         rows={3}
         onChange={handleChange}
         options={mockUsers}
+      // style={{ 'width': '100%', 'padding': '9px' }}
       />
       <button onClick={handleSend}>Send</button>
     </div>
