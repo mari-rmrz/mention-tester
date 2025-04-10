@@ -25,7 +25,7 @@ const ReactMentionExample: React.FC = () => {
   const handleSend = () => {
     const mentionedEmails = extractMentionedEmails();
 
-    alert(`message ${value} sent to ${mentionedEmails} !`)
+    alert(`message: ${value} sent to ${mentionedEmails} !`)
     setValue('')
   }
 
