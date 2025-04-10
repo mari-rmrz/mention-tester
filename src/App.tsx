@@ -7,13 +7,14 @@ const App: React.FC = () => {
   const [value, setValue] = useState("")
 
   const handleChange = (e: any) => {
+    console.log('e=', e.target.value)
     setValue(e.target.value)
   }
 
   const mockUsers = [
-    { id: '1', display: 'Alice', email: 'alice@mail.com' },
-    { id: '2', display: 'Bob', email: 'bob@mail.com' },
-    { id: '3', display: 'Carlos', email: 'carlos@mail.com' },
+    { display: 'Alice', id: 'alice@mail.com' },
+    { display: 'Bob', id: 'bob@mail.com' },
+    { display: 'Carlos', id: 'carlos@mail.com' },
   ]
 
   const handleSend = () => {
@@ -31,8 +32,9 @@ const App: React.FC = () => {
         placeholder={"Mention people using '@'"}
         a11ySuggestionsListLabel={"Suggested mentions"}
         style={{ width: "100%", height: 100 }}
+        className="mentionSection"
       >
-        <Mention className="mentionSection" trigger='@' data={mockUsers} displayTransform={(_id, display) => `@${display}`} />
+        <Mention trigger='@' data={mockUsers} displayTransform={(_id, display) => `@${display}`} />
       </MentionsInput>
       <button onClick={handleSend}>Send</button>
     </div>
