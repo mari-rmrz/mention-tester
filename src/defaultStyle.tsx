@@ -1,6 +1,6 @@
 export default {
   control: {
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
     fontSize: 14,
     fontWeight: 'normal',
   },
@@ -44,7 +44,7 @@ export default {
       padding: '5px 15px',
       borderBottom: '1px solid rgba(0,0,0,0.15)',
       '&focused': {
-        backgroundColor: '#cee4e5',
+        backgroundColor: 'lightblue',
       },
     },
   },

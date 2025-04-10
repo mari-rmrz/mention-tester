@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { MentionsInput, Mention } from 'react-mentions'
 
 import defaultStyle from './defaultStyle'
-import './index.css'
 
 const App: React.FC = () => {
   const [value, setValue] = useState("")
