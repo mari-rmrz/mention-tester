@@ -42,7 +42,7 @@ const App: React.FC = () => {
         style={{ width: "100%", height: 100 }}
         className="mentionSection"
       >
-        <Mention trigger='@' data={mockUsers} displayTransform={(_id, display) => `@${display}`} />
+        <Mention trigger='@' data={mockUsers} displayTransform={(_id, display) => `@${display}`} style={{ backgroundColor: 'darkslategrey' }} />
       </MentionsInput>
       <button onClick={handleSend}>Send</button>
     </div>
