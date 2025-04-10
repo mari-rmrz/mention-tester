@@ -31,7 +31,7 @@ const App: React.FC = () => {
         a11ySuggestionsListLabel={"Suggested mentions"}
         style={{ width: "100%", height: 100 }}
       >
-        <Mention trigger='@' data={mockUsers} style={{ backgroundColor: 'darkslategrey' }} displayTransform={(id, display) => `@${display}`} />
+        <Mention trigger='@' data={mockUsers} style={{ backgroundColor: 'darkslategrey' }} displayTransform={(display) => `@${display}`} />
       </MentionsInput>
       <button onClick={handleSend}>Send</button>
     </div>
