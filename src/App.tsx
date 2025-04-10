@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 import React, { useState } from 'react'
 import { MentionsInput, Mention } from 'react-mentions'
 
@@ -20,18 +22,17 @@ const App: React.FC = () => {
   }
 
   return (
-    <div className="single-line">
-      <h3>Single line input</h3>
+    <div>
+      <h3>Input with @mention functionality</h3>
 
       <MentionsInput
-        singleLine
         value={value}
         onChange={handleChange}
         placeholder={"Mention people using '@'"}
         a11ySuggestionsListLabel={"Suggested mentions"}
         style={{ width: "100%", height: 100 }}
       >
-        <Mention trigger='@' data={mockUsers} style={{ backgroundColor: 'darkslategrey' }} displayTransform={(display) => `@${display}`} />
+        <Mention className="mentionSection" trigger='@' data={mockUsers} displayTransform={(_id, display) => `@${display}`} />
       </MentionsInput>
       <button onClick={handleSend}>Send</button>
     </div>
