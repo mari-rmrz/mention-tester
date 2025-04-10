@@ -3,11 +3,10 @@ import { MentionsInput, Mention } from 'react-mentions'
 
 import defaultStyle from './defaultStyle'
 
-const App: React.FC = () => {
+const ReactMentionExample: React.FC = () => {
   const [value, setValue] = useState("")
 
   const handleChange = (e: any) => {
-    console.log('e=', e.target.value)
     setValue(e.target.value)
   }
 
@@ -32,7 +31,7 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <h3>Input with @mention functionality</h3>
+      <h3>Input using react-mention library</h3>
 
       <MentionsInput
         value={value}
@@ -48,4 +47,4 @@ const App: React.FC = () => {
   )
 }
 
-export default App
+export default ReactMentionExample

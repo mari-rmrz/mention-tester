@@ -11,6 +11,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@rc-component/mentions": "^1.2.0",
+    "rc-mentions": "^2.19.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-mentions": "^4.4.10"
