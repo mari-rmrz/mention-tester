@@ -9,10 +9,15 @@ const App: React.FC = () => {
   }
 
   const mockUsers = [
-    { id: '1', display: 'Alice' },
-    { id: '2', display: 'Bob' },
-    { id: '3', display: 'Carlos' },
+    { id: '1', display: 'Alice', email: 'alice@mail.com' },
+    { id: '2', display: 'Bob', email: 'bob@mail.com' },
+    { id: '3', display: 'Carlos', email: 'carlos@mail.com' },
   ]
+
+  const handleSend = () => {
+    alert(`message sent to ${value} !`)
+    setValue('')
+  }
 
   return (
     <div className="single-line">
@@ -24,9 +29,11 @@ const App: React.FC = () => {
         onChange={handleChange}
         placeholder={"Mention people using '@'"}
         a11ySuggestionsListLabel={"Suggested mentions"}
+        style={{ width: "100%", height: 100 }}
       >
-        <Mention trigger='@' data={mockUsers} />
+        <Mention trigger='@' data={mockUsers} style={{ backgroundColor: 'darkslategrey' }} displayTransform={(id, display) => `@${display}`} />
       </MentionsInput>
+      <button onClick={handleSend}>Send</button>
     </div>
   )
 }
