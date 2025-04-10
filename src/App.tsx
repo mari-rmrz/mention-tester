@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { MentionsInput, Mention } from 'react-mentions'
 
+import defaultStyle from './defaultStyle'
 import './index.css'
 
 const App: React.FC = () => {
@@ -39,10 +40,9 @@ const App: React.FC = () => {
         onChange={handleChange}
         placeholder={"Mention people using '@'"}
         a11ySuggestionsListLabel={"Suggested mentions"}
-        style={{ width: "100%", height: 100 }}
-        className="mentionSection"
+        style={defaultStyle}
       >
-        <Mention trigger='@' data={mockUsers} displayTransform={(_id, display) => `@${display}`} style={{ backgroundColor: 'darkslategrey' }} />
+        <Mention trigger='@' data={mockUsers} displayTransform={(_id, display) => `@${display}`} />
       </MentionsInput>
       <button onClick={handleSend}>Send</button>
     </div>
