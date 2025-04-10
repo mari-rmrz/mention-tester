@@ -1,7 +1,7 @@
-/* eslint-disable  @typescript-eslint/no-explicit-any */
-
 import React, { useState } from 'react'
 import { MentionsInput, Mention } from 'react-mentions'
+
+import './index.css'
 
 const App: React.FC = () => {
   const [value, setValue] = useState("")
