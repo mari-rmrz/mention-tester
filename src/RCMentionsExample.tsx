@@ -10,21 +10,14 @@ const RCMentionsExample: React.FC = () => {
   ]
 
   const [value, setValue] = useState("")
-  const [email, setEmail] = useState("")
 
   const handleChange = (e: any) => {
-    console.log('e?', e)
     setValue(e.target.value)
   }
 
   const handleSend = () => {
-    alert(`message ${value} sent to ${email} !`)
+    alert(`message sent to ${value} !`)
     setValue('')
-  }
-
-  const handleSelect = (option: any) => {
-    console.log('opt?', option)
-    setEmail(option.email)
   }
 
   return (
@@ -35,7 +28,7 @@ const RCMentionsExample: React.FC = () => {
         rows={3}
         onChange={handleChange}
         options={mockUsers}
-        onSelect={handleSelect}
+        placeholder={"Mention people using '@'"}
       />
       <button onClick={handleSend}>Send</button>
     </div>

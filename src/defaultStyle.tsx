@@ -9,6 +9,7 @@ export default {
     control: {
       fontFamily: 'monospace',
       minHeight: 63,
+      marginBottom: '8px',
     },
     highlighter: {
       padding: 9,

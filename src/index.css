@@ -87,6 +87,7 @@ button:focus-visible {
 .rc-mentions > textarea {
   border: none;
   width: 100%;
+  padding: 9px;
 }
 .rc-mentions-measure {
   position: absolute;
