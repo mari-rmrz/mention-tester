@@ -13,6 +13,7 @@ const RCMentionsExample: React.FC = () => {
   const [email, setEmail] = useState("")
 
   const handleChange = (e: any) => {
+    console.log('e?', e)
     setValue(e.target.value)
   }
 
@@ -22,6 +23,7 @@ const RCMentionsExample: React.FC = () => {
   }
 
   const handleSelect = (option: any) => {
+    console.log('opt?', option)
     setEmail(option.email)
   }
 
