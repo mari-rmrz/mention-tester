@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
 import Mentions from '@rc-component/mentions'
 
-
 const RCMentionsExample: React.FC = () => {
-  const { Option } = Mentions;
 
   const mockUsers = [
-    { display: 'Alice', id: 'alice@mail.com' },
-    { display: 'Bob', id: 'bob@mail.com' },
-    { display: 'Carlos', id: 'carlos@mail.com' },
+    { value: 'alice@mail.com', label: 'Alice' },
+    { value: 'bob@mail.com', label: 'Bob' },
+    { value: 'carlos@mail.com', label: 'Carlos' },
   ]
 
   const [value, setValue] = useState("")
@@ -33,13 +31,12 @@ const RCMentionsExample: React.FC = () => {
   return (
     <div>
       <h3>Input using rc-mentions library</h3>
-      <Mentions onChange={handleChange} autoFocus>
-        {mockUsers.map((item) => {
-          return (
-            <Option value={`${item.display}`}>{item.display}</Option>
-          )
-        })}
-      </Mentions>
+      <Mentions
+        autoFocus
+        rows={3}
+        onChange={handleChange}
+        options={mockUsers}
+      />
       <button onClick={handleSend}>Send</button>
     </div>
   )
