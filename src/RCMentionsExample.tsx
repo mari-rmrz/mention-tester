@@ -4,28 +4,25 @@ import Mentions from '@rc-component/mentions'
 const RCMentionsExample: React.FC = () => {
 
   const mockUsers = [
-    { value: 'alice@mail.com', label: 'Alice' },
-    { value: 'bob@mail.com', label: 'Bob' },
-    { value: 'carlos@mail.com', label: 'Carlos' },
+    { value: 'Alyson', label: 'Alyson', email: 'alyson@mail.com' },
+    { value: 'Barry', label: 'Barry', email: 'barry@mail.com' },
+    { value: 'Carol', label: 'Carol', email: 'carol@mail.com' },
   ]
 
   const [value, setValue] = useState("")
+  const [email, setEmail] = useState("")
 
   const handleChange = (e: any) => {
     setValue(e.target.value)
   }
 
-  const extractMentionedEmails = () => {
-    const regex = /@\[([^\]]+)\]\(([^)]+)\)/g;
-    const matches = [...value.matchAll(regex)];
-    return matches.map((m) => m[2]); // m[2] is the ID (email)
-  };
-
   const handleSend = () => {
-    const mentionedEmails = extractMentionedEmails();
-
-    alert(`message ${value} sent to ${mentionedEmails} !`)
+    alert(`message ${value} sent to ${email} !`)
     setValue('')
+  }
+
+  const handleSelect = (option: any) => {
+    setEmail(option.email)
   }
 
   return (
@@ -36,7 +33,7 @@ const RCMentionsExample: React.FC = () => {
         rows={3}
         onChange={handleChange}
         options={mockUsers}
-      // style={{ 'width': '100%', 'padding': '9px' }}
+        onSelect={handleSelect}
       />
       <button onClick={handleSend}>Send</button>
     </div>

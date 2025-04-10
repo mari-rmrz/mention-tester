@@ -105,6 +105,7 @@ button:focus-visible {
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: darkcyan;
 }
 .rc-mentions-dropdown-menu-item {
   cursor: pointer;
@@ -124,7 +125,7 @@ button:focus-visible {
   padding: 4px 8px;
 }
 .rc-mentions-dropdown-menu-item-active {
-  background: #e6f7ff;
+  background: lightblue;
 }
 .rc-mentions-dropdown-menu-item-disabled {
   opacity: 0.5;
