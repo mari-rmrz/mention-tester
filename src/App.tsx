@@ -17,8 +17,16 @@ const App: React.FC = () => {
     { display: 'Carlos', id: 'carlos@mail.com' },
   ]
 
+  const extractMentionedEmails = () => {
+    const regex = /@\[([^\]]+)\]\(([^)]+)\)/g;
+    const matches = [...value.matchAll(regex)];
+    return matches.map((m) => m[2]); // m[2] is the ID (email)
+  };
+
   const handleSend = () => {
-    alert(`message sent to ${value} !`)
+    const mentionedEmails = extractMentionedEmails();
+
+    alert(`message ${value} sent to ${mentionedEmails} !`)
     setValue('')
   }
 
