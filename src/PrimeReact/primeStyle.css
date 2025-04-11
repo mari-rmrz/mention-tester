@@ -3,8 +3,9 @@
   margin: 0;
   width: 100%;
 }
+}
 
-
+@layer primereact{
 .p-mention {
   display: inline-flex;
   position: relative;

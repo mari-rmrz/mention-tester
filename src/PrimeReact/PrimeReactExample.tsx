@@ -28,8 +28,10 @@ const PrimeReactExample: React.FC = () => {
         suggestions={mockUsers}
         field="textarea"
         placeholder='Enter @ to mention people'
+        trigger='@'
         rows={5}
         cols={40}
+        inputStyle={{ width: '100%' }}
       />
       <button onClick={handleSend}>Send</button>
     </div>
