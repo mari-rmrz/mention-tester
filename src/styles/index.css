@@ -62,7 +62,7 @@ button:focus-visible {
 }
 .rc-mentions > textarea,
 .rc-mentions-measure {
-  background-color: '#000';
+  background-color: #000;
   font-size: inherit;
   font-size-adjust: inherit;
   font-style: inherit;
