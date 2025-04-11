@@ -1,9 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
-import ReactMentionExample from './ReactMentionExample.tsx'
-import RCMentionsExample from './RCMentionsExample.tsx'
-import PrimeReactExample from './PrimeReactExample.tsx'
+import ReactMentionExample from './ReactMention/ReactMentionExample.tsx'
+import RCMentionsExample from './RCMention/RCMentionsExample.tsx'
+import PrimeReactExample from './PrimeReact/PrimeReactExample.tsx'
 
 import './index.css'
 
