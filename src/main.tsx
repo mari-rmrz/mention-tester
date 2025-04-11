@@ -11,7 +11,6 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <SingleLineExample />
     <TextAreaExample />
-    <hr className="dotted" />
     <RCMentionsExample />
   </StrictMode>,
 )

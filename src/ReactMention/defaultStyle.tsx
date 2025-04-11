@@ -23,7 +23,7 @@ export default {
 
   '&singleLine': {
     display: 'inline-block',
-    width: 180,
+    width: '100%',
 
     highlighter: {
       padding: 1,
@@ -33,9 +33,6 @@ export default {
       padding: 1,
       border: '2px inset',
     },
-    '&focused': {
-      backgroundColor: '#535bf2',
-    }
   },
 
   suggestions: {
