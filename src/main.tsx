@@ -8,6 +8,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ReactMentionExample />
     <hr className="dotted" />
+
     <RCMentionsExample />
   </StrictMode>,
 )
