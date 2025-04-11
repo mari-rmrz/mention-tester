@@ -1,10 +1,13 @@
-.p-mention-input {
+@layer primereact {
+.p-inputtext {
   margin: 0;
   width: 100%;
 }
+
 
 .p-mention {
   display: inline-flex;
   position: relative;
   width: 100%;
+}
 }
