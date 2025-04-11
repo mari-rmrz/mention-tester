@@ -5,7 +5,7 @@ import ReactMentionExample from './ReactMention/ReactMentionExample.tsx'
 import RCMentionsExample from './RCMention/RCMentionsExample.tsx'
 import PrimeReactExample from './PrimeReact/PrimeReactExample.tsx'
 
-import './index.css'
+import './styles/index.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

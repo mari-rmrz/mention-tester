@@ -1,0 +1,10 @@
+.p-mention-input {
+  margin: 0;
+  width: 100%;
+}
+
+.p-mention {
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+}
