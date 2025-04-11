@@ -27,9 +27,9 @@ const RCMentionsExample: React.FC = () => {
         <li>❌no keyboard control to select a name from dropdown</li>
         <li>❌value not getting set</li>
         <li>❌dropdown sometimes stays on while typing</li>
+        <li>❌no single line option</li>
       </ul>
       <Mentions
-        autoFocus
         rows={3}
         onChange={handleChange}
         options={mockUsers}

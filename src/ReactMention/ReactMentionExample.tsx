@@ -36,7 +36,22 @@ const ReactMentionExample: React.FC = () => {
         <li>👍keyboard control</li>
         <li>👍styling is easy to work with</li>
         <li>👍catching message and email separately</li>
+        <li>👍options for single line input and textarea</li>
       </ul>
+      <p>single line</p>
+      <MentionsInput
+        singleLine
+        autoFocus
+        value={value}
+        onChange={handleChange}
+        placeholder={"Mention people using '@'"}
+        a11ySuggestionsListLabel={"Suggested mentions"}
+        style={defaultStyle}
+      >
+        <Mention trigger='@' data={mockUsers} displayTransform={(_id, display) => `@${display}`} />
+      </MentionsInput>
+
+      <p>text area</p>
       <MentionsInput
         value={value}
         onChange={handleChange}
