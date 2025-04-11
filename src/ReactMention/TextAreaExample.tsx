@@ -3,7 +3,7 @@ import { MentionsInput, Mention } from 'react-mentions'
 
 import defaultStyle from './defaultStyle'
 
-const ReactMentionExample: React.FC = () => {
+const TextAreaExample: React.FC = () => {
   const [value, setValue] = useState("")
 
   const handleChange = (e: any) => {
@@ -38,18 +38,6 @@ const ReactMentionExample: React.FC = () => {
         <li>👍catching message and email separately</li>
         <li>👍options for single line input and textarea</li>
       </ul>
-      <p>single line</p>
-      <MentionsInput
-        singleLine
-        autoFocus
-        value={value}
-        onChange={handleChange}
-        placeholder={"Mention people using '@'"}
-        a11ySuggestionsListLabel={"Suggested mentions"}
-        style={defaultStyle}
-      >
-        <Mention trigger='@' data={mockUsers} displayTransform={(_id, display) => `@${display}`} />
-      </MentionsInput>
 
       <p>text area</p>
       <MentionsInput
@@ -66,4 +54,4 @@ const ReactMentionExample: React.FC = () => {
   )
 }
 
-export default ReactMentionExample
+export default TextAreaExample
