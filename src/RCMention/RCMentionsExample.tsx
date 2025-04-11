@@ -24,9 +24,9 @@ const RCMentionsExample: React.FC = () => {
     <div>
       <h3>Input using rc-mentions library 🚫</h3>
       <ul>
-        <li>❌no keyboard control</li>
+        <li>❌no keyboard control to select a name from dropdown</li>
         <li>❌value not getting set</li>
-        <li>❌dropdown sometimes stays on while still typing</li>
+        <li>❌dropdown sometimes stays on while typing</li>
       </ul>
       <Mentions
         autoFocus
