@@ -32,13 +32,6 @@ const TextAreaExample: React.FC = () => {
   return (
     <div>
       <h3>Input using react-mention library ✅</h3>
-      <ul>
-        <li>👍keyboard control</li>
-        <li>👍styling is easy to work with</li>
-        <li>👍catching message and email separately</li>
-        <li>👍options for single line input and textarea</li>
-      </ul>
-
       <p>text area</p>
       <MentionsInput
         value={value}

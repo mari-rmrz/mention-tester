@@ -28,6 +28,7 @@ export default {
     highlighter: {
       padding: 1,
       border: '2px inset transparent',
+      color: '#535bf2',
     },
     input: {
       padding: 1,

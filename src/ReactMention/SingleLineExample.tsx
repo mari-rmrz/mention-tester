@@ -30,28 +30,31 @@ const SingleLineExample: React.FC = () => {
   }
 
   return (
-    <div>
-      <h3>Input using react-mention library ✅</h3>
-      <ul>
-        <li>👍keyboard control</li>
-        <li>👍styling is easy to work with</li>
-        <li>👍catching message and email separately</li>
-        <li>👍options for single line input and textarea</li>
-      </ul>
-      <p>single line</p>
-      <MentionsInput
-        singleLine
-        autoFocus
-        value={value}
-        onChange={handleChange}
-        placeholder={"Mention people using '@'"}
-        a11ySuggestionsListLabel={"Suggested mentions"}
-        style={defaultStyle}
-      >
-        <Mention trigger='@' data={mockUsers} displayTransform={(_id, display) => `@${display}`} />
-      </MentionsInput>
+    <>
+      <div>
+        <h3>Input using react-mention library ✅</h3>
+        <ul>
+          <li>👍keyboard control</li>
+          <li>👍styling is easy to work with</li>
+          <li>👍supports auto focus highlight</li>
+          <li>👍catching message and email separately</li>
+          <li>👍options for single line input and textarea</li>
+        </ul>
+        <p>single line</p>
+        <MentionsInput
+          singleLine
+          autoFocus
+          value={value}
+          onChange={handleChange}
+          placeholder={"Mention people using '@'"}
+          a11ySuggestionsListLabel={"Suggested mentions"}
+          style={defaultStyle}
+        >
+          <Mention trigger='@' data={mockUsers} displayTransform={(_id, display) => `@${display}`} />
+        </MentionsInput>
+      </div>
       <button onClick={handleSend}>Send</button>
-    </div>
+    </>
   )
 }
 
