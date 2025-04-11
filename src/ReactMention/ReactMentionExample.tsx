@@ -32,7 +32,11 @@ const ReactMentionExample: React.FC = () => {
   return (
     <div>
       <h3>Input using react-mention library ✅</h3>
-
+      <ul>
+        <li>👍keyboard control</li>
+        <li>👍styling is easy to work with</li>
+        <li>👍catching message and email separately</li>
+      </ul>
       <MentionsInput
         value={value}
         onChange={handleChange}

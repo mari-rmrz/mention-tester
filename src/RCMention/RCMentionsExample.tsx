@@ -23,6 +23,11 @@ const RCMentionsExample: React.FC = () => {
   return (
     <div>
       <h3>Input using rc-mentions library 🚫</h3>
+      <ul>
+        <li>❌no keyboard control</li>
+        <li>❌value not getting set</li>
+        <li>❌dropdown sometimes stays on while still typing</li>
+      </ul>
       <Mentions
         autoFocus
         rows={3}
