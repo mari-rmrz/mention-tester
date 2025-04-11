@@ -22,7 +22,7 @@ const RCMentionsExample: React.FC = () => {
 
   return (
     <div>
-      <h3>Input using rc-mentions library</h3>
+      <h3>Input using rc-mentions library 🚫</h3>
       <Mentions
         autoFocus
         rows={3}

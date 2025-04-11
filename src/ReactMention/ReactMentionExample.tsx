@@ -31,7 +31,7 @@ const ReactMentionExample: React.FC = () => {
 
   return (
     <div>
-      <h3>Input using react-mention library</h3>
+      <h3>Input using react-mention library ✅</h3>
 
       <MentionsInput
         value={value}
